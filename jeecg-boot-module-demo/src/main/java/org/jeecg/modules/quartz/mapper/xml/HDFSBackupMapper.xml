@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.jeecg.modules.quartz.mapper.HDFSBackupMapper">
+
+    <!-- 根据jobClassName查询 -->
+    <select id="findByHDFSValue" resultType="org.jeecg.modules.quartz.entity.HDFSBackup">
+		select * from  hdfs_backup_policy  where value = #{value}
+	</select>
+</mapper>
